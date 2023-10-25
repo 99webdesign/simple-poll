@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Quick Poll</title>
+</head>
+
+<body>
+    <div id="pollContainer">
+        <h1>Quick Poll</h1>
+        <div id="createPoll">
+            <h2>Create a Poll</h2>
+            <input type="text" id="question" placeholder="Enter your question" required>
+            <input type="text" class="options" placeholder="Option 1" required>
+            <input type="text" class="options" placeholder="Option 2" required>
+            <button id="addOption">Add Option</button>
+            <button id="create">Create Poll</button>
+        </div>
+
+        <div id="votePoll" hidden>
+            <h2 id="pollQuestion"></h2>
+            <form id="optionsForm">
+                <!-- Options will be populated here -->
+            </form>
+            <button id="vote">Vote</button>
+        </div>
+
+        <div id="results" hidden>
+            <h2>Results</h2>
+            <div id="resultContainer">
+                <!-- Results will be populated here -->
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
